@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hk_mp5",
+    "copy-from": "hk_mp5",
+    "type": "GUN",
+
+    "name": {
+      "str": "H&K MP5A2"
+    },
+
+    "extend": { "weapon_category": ["PLATFORM_MP5"] }
+  },
+  {
+    "id": "hk_mp5k",
+    "copy-from": "hk_mp5k",
+    "type": "GUN",
+
+    "name": {
+      "str": "H&K MP5K-PDW"
+    },
+
+    "extend": { "weapon_category": ["PLATFORM_MP5"] }
+  },
+  {
+    "id": "hk_mp5sd",
+    "copy-from": "hk_mp5sd",
+    "type": "GUN",
+
+    "name": {
+      "str": "H&K MP5SD"
+    },
+
+    "extend": { "weapon_category": ["PLATFORM_MP5"] }
+  },
+  {
+    "id": "hk_mp5_10_semi",
+    "copy-from": "hk_mp5_10_semi",
+    "type": "GUN",
+
+    "name": {
+      "str": "BA10 rifle"
+    },
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "hk_mp5_10_semi",
+        "name": {
+          "str": "BA10 rifle"
+        },
+        "description": "The MP5/10 served the FBI briefly alongside their 10mm Auto pistols, adding to the caliber's overall mystique.  Though the gun's usage was short-lived, a handful of clones were made and sold occasionally.  This semi-automatic clone manufactured by Brethren Arms features a welded-on M1913 rail and a collapsible arm brace."
+      }
+    ],
+
+    "extend": { "weapon_category": ["PLATFORM_MP5"] }
+  },
+  {
+    "id": "hk_mp5_semi_pistol",
+    "copy-from": "hk_mp5_semi_pistol",
+    "type": "GUN",
+
+    "name": {
+      "str": "PTR 603"
+    },
+
+    "extend": { "weapon_category": ["PLATFORM_MP5"] }
+  }
+]

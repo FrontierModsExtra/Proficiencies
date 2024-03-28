@@ -1,0 +1,46 @@
+[
+  {
+    "id": "proficiency_platform_mp5_novice",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "MP5 Platform Familiarity" },
+    "description": "You're familiar with how an MP5-style SMG operates and performs in the field.",
+
+    "can_learn": true,
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "8 h"
+  },
+  {
+    "id": "proficiency_platform_mp5_expert",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "MP5 Platform Expertise" },
+    "description": "You can handle an MP5-style SMG like a professional, knowing quite well how it behaves.",
+
+    "can_learn": true,
+    "required_proficiencies": ["proficiency_platform_mp5_novice"],
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "16 h"
+  },
+  {
+    "id": "proficiency_platform_mp5_master",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "MP5 Platform Mastery" },
+    "description": "MP5-style SMG operation holds no secrets to you.",
+
+    "can_learn": true,
+    "required_proficiencies": ["proficiency_platform_mp5_expert"],
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "32 h"
+  }
+]
