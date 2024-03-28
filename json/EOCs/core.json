@@ -3,6 +3,11 @@
     "id": "EOC_PROFICIENCY_CHECK_PLATFORM",
     "type": "effect_on_condition",
 
+    "//notes": [
+      "unless the character has a weapon, platform and type will remain `null`",
+      "`u_has_weapon` checks for any wielded item"
+    ],
+
     "effect": [
       {
         "set_string_var": "null",
@@ -16,7 +21,7 @@
         "if": "u_has_weapon",
         "then": [
           {
-            "run_eocs": ["IS_PLATFORM_AK"]
+            "run_eocs": ["IS_PLATFORM_AK", "IS_PLATFORM_MP5"]
           },
           { "run_eocs": "EOC_PLATFORM_GET_PROFICIENCY_TYPE" }
         ]
@@ -29,6 +34,10 @@
     "type": "effect_on_condition",
     "eoc_type": "EVENT",
     "required_event": "game_begin",
+
+    "//notes": [
+      "for cases when the character starts with a firearm in their hands"
+    ],
 
     "effect": [{ "run_eocs": "EOC_PROFICIENCY_CHECK_PLATFORM" }]
   },
