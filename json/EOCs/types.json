@@ -1,0 +1,93 @@
+[
+  {
+    "id": "EOC_PLATFORM_GET_PROFICIENCY_TYPE",
+    "type": "effect_on_condition",
+
+    "condition": {
+      "not": {
+        "compare_string": ["null", { "u_val": "proficiency_current_platform" }]
+      }
+    },
+    "effect": [
+      {
+        "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_familiar",
+        "target_var": {
+          "context_val": "proficiency_familiar"
+        },
+        "parse_tags": true
+      },
+      {
+        "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_expert",
+        "target_var": {
+          "context_val": "proficiency_expert"
+        },
+        "parse_tags": true
+      },
+      {
+        "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_master",
+        "target_var": {
+          "context_val": "proficiency_master"
+        },
+        "parse_tags": true
+      },
+
+      {
+        "set_string_var": "familiar",
+        "target_var": {
+          "u_val": "proficiency_target_type"
+        }
+      },
+      {
+        "if": {
+          "u_has_proficiency": {
+            "context_val": "proficiency_familiar"
+          }
+        },
+        "then": {
+          "set_string_var": "proficient",
+          "target_var": {
+            "u_val": "proficiency_target_type"
+          }
+        }
+      },
+      {
+        "if": {
+          "u_has_proficiency": {
+            "context_val": "proficiency_expert"
+          }
+        },
+        "then": {
+          "set_string_var": "master",
+          "target_var": {
+            "u_val": "proficiency_target_type"
+          }
+        }
+      },
+
+      {
+        "if": {
+          "u_has_proficiency": {
+            "context_val": "proficiency_familiar"
+          }
+        },
+        "then": [
+          {
+            "set_string_var": "proficiency_<u_val:proficiency_target_type>_equipped",
+            "target_var": {
+              "context_val": "effect_from_proficiency"
+            },
+            "parse_tags": true
+          },
+
+          { "u_lose_effect": "proficiency_familiar_equipped" },
+          { "u_lose_effect": "proficiency_expert_equipped" },
+          { "u_lose_effect": "proficiency_master_equipped" },
+          {
+            "u_add_effect": { "context_val": "effect_from_proficiency" },
+            "duration": 31536000
+          }
+        ]
+      }
+    ]
+  }
+]

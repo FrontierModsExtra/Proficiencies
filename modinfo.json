@@ -1,0 +1,17 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "proficiencies",
+
+    "name": "Proficiencies",
+    "description": "Adds firearm proficiencies your character can gain, separated by firearm platform",
+
+    "authors": ["Hyperseeker"],
+
+    "category": "misc_additions",
+
+    "dependencies": ["dda"],
+
+    "path": "json"
+  }
+]

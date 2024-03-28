@@ -1,0 +1,6 @@
+.vscode
+.prettierrc
+*.todo
+*.old
+*.experimental
+TODO

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "IS_PLATFORM_AK",
+    "type": "effect_on_condition",
+
+    "condition": { "u_has_wielded_with_weapon_category": "PLATFORM_AK" },
+    "effect": {
+      "set_string_var": "ak",
+      "target_var": { "u_val": "proficiency_current_platform" }
+    }
+  }
+]

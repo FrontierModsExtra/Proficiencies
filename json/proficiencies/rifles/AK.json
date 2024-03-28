@@ -1,0 +1,46 @@
+[
+  {
+    "id": "proficiency_platform_ak_familiar",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "AK Platform Familiarity" },
+    "description": "You're familiar with how an AK-family rifle operates and performs in the field.",
+
+    "can_learn": true,
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "8 h"
+  },
+  {
+    "id": "proficiency_platform_ak_expert",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "AK Platform Expertise" },
+    "description": "You've gotten pretty handy with the AK family of rifles, understanding their operation intimately.",
+
+    "can_learn": true,
+    "required_proficiencies": ["proficiency_platform_ak_familiar"],
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "16 h"
+  },
+  {
+    "id": "proficiency_platform_ak_master",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "AK Platform Mastery" },
+    "description": "You know how to make AK rifles sing in your hands.",
+
+    "can_learn": true,
+    "required_proficiencies": ["proficiency_platform_ak_expert"],
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "32 h"
+  }
+]

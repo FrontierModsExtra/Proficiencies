@@ -1,0 +1,34 @@
+[
+  {
+    "id": "DEBUG_EOC_REPORT_PLATFORM_AND_TYPE",
+    "type": "effect_on_condition",
+
+    "effect": [
+      { "u_message": "Current platform: <u_val:proficiency_current_platform>" },
+      {
+        "u_message": "Current type: <u_val:proficiency_target_type>"
+      }
+    ]
+  },
+  {
+    "id": "DEBUG_EOC_RECALCULATE_PLATFORM_AND_TYPE",
+    "type": "effect_on_condition",
+
+    "effect": {
+      "run_eocs": [
+        "EOC_PROFICIENCY_CHECK_PLATFORM",
+        "DEBUG_EOC_REPORT_PLATFORM_AND_TYPE"
+      ]
+    }
+  },
+  {
+    "id": "DEBUG_EOC_REMOVE_PROFICIENCY_EFFECTS",
+    "type": "effect_on_condition",
+
+    "effect": [
+      { "u_lose_effect": "proficiency_familiar_equipped" },
+      { "u_lose_effect": "proficiency_expert_equipped" },
+      { "u_lose_effect": "proficiency_master_equipped" }
+    ]
+  }
+]

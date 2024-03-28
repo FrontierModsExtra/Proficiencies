@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ak47",
+    "copy-from": "ak47",
+    "type": "GUN",
+
+    "name": {
+      "str": "AKM"
+    },
+
+    "extend": { "weapon_category": ["PLATFORM_AK"] }
+  },
+  {
+    "id": "ak74",
+    "copy-from": "ak74",
+    "type": "GUN",
+
+    "name": {
+      "str": "AK-74M"
+    },
+
+    "extend": { "weapon_category": ["PLATFORM_AK"] }
+  },
+  {
+    "id": "aksemi",
+    "copy-from": "aksemi",
+    "type": "GUN",
+
+    "name": {
+      "str": "AK-47"
+    },
+
+    "extend": { "weapon_category": ["PLATFORM_AK"] }
+  },
+  {
+    "id": "ak308",
+    "copy-from": "ak308",
+    "type": "GUN",
+
+    "name": {
+      "str": "7.62x51mm AK"
+    },
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "papm77",
+        "name": {
+          "str": "PAP M77"
+        },
+        "description": "A Serbian-made AK pattern rifle made by Zastava in 7.62x51mm NATO.  To avoid import restrictions, Zastava USA has added a number of American-made parts."
+      }
+    ],
+
+    "extend": { "weapon_category": ["PLATFORM_AK"] }
+  },
+  {
+    "id": "ak556",
+    "copy-from": "ak556",
+    "type": "GUN",
+
+    "name": {
+      "str": "5.56x45mm AK"
+    },
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "zpapm90",
+        "name": {
+          "str": "ZPAP M90"
+        },
+        "description": "A Serbian-made AK pattern rifle made by Zastava in 5.56x45mm NATO.  To avoid import restrictions, Zastava USA has added a number of American-made parts."
+      }
+    ],
+
+    "extend": { "weapon_category": ["PLATFORM_AK"] }
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "id": "EOC_PROFICIENCY_CHECK_PLATFORM",
+    "type": "effect_on_condition",
+
+    "effect": [
+      {
+        "set_string_var": "null",
+        "target_var": { "u_val": "proficiency_current_platform" }
+      },
+      {
+        "set_string_var": "null",
+        "target_var": { "u_val": "proficiency_target_type" }
+      },
+      {
+        "if": "u_has_weapon",
+        "then": [
+          {
+            "run_eocs": ["IS_PLATFORM_AK"]
+          },
+          { "run_eocs": "EOC_PLATFORM_GET_PROFICIENCY_TYPE" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": "EOC_PROFICIENCY_ON_NEW_GAME",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "game_begin",
+
+    "effect": [{ "run_eocs": "EOC_PROFICIENCY_CHECK_PLATFORM" }]
+  },
+  {
+    "id": "EOC_PROFICIENCY_ON_WIELD",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "character_wields_item",
+
+    "effect": [{ "run_eocs": "EOC_PROFICIENCY_CHECK_PLATFORM" }]
+  },
+
+  {
+    "id": "EOC_PROFICIENCY_ON_HIT_MONSTER",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "character_ranged_attacks_monster",
+
+    "effect": [{ "run_eocs": "EOC_PROFICIENCY_IMPROVE" }]
+  },
+  {
+    "id": "EOC_PROFICIENCY_ON_HIT_CHARACTER",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "character_ranged_attacks_character",
+
+    "effect": [{ "run_eocs": "EOC_PROFICIENCY_IMPROVE" }]
+  }
+]
