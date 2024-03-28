@@ -1,0 +1,156 @@
+[
+  {
+    "id": "glock_17",
+    "copy-from": "glock_17",
+    "type": "GUN",
+
+    "name": {
+      "str": "Glock duty pistol"
+    },
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "glock_17",
+        "name": {
+          "str": "Glock 17 pistol"
+        },
+        "description": "Commonly seen tucked away in the holsters of police officers, certain military professionals, and civilian shooters, this is a larger, older, service-oriented version of the popular Glock 19.  Similarly firing the 9x19mm cartridge and using higher capacity magazines, it performs largely the same, but due to the longer magazine well, it can't fit magazines shorter than the standard 17-round ones."
+      }
+    ],
+
+    "extend": { "weapon_category": ["PLATFORM_GLOCK"] }
+  },
+  {
+    "id": "glock_18c",
+    "copy-from": "glock_18c",
+    "type": "GUN",
+
+    "name": {
+      "str": "Glock machine pistol"
+    },
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "glock_18c",
+        "name": {
+          "str": "Glock 18C pistol"
+        },
+        "description": "A selective-fire variation on the Glock 17, originally designed for Austria's EKO Cobra unit.  It has compensator cuts along its barrel to make recoil more manageable."
+      }
+    ],
+
+    "extend": { "weapon_category": ["PLATFORM_GLOCK"] }
+  },
+  {
+    "id": "glock_20",
+    "copy-from": "glock_20",
+    "type": "GUN",
+
+    "name": {
+      "str": "Glock pistol"
+    },
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "glock_20",
+        "name": {
+          "str": "Glock 20 pistol"
+        },
+        "description": "A full-sized version of the highly successful Glock, chambered in hard-hitting 10mm Auto.  The third model of Glock designed, all other full-sized, large framed Glocks are adaptations of this one."
+      }
+    ],
+
+    "extend": { "weapon_category": ["PLATFORM_GLOCK"] }
+  },
+  {
+    "id": "glock_21",
+    "copy-from": "glock_21",
+    "type": "GUN",
+
+    "name": {
+      "str": "Glock pistol"
+    },
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "glock_21",
+        "name": {
+          "str": "Glock 21 pistol"
+        },
+        "description": "A full-sized version of the highly successful Glock.  This model is chambered in .45 ACP."
+      }
+    ],
+
+    "extend": { "weapon_category": ["PLATFORM_GLOCK"] }
+  },
+  {
+    "id": "glock_22",
+    "copy-from": "glock_22",
+    "type": "GUN",
+
+    "name": {
+      "str_sp": "Glock 22"
+    },
+
+    "extend": { "weapon_category": ["PLATFORM_GLOCK"] }
+  },
+  {
+    "id": "glock_29",
+    "copy-from": "glock_29",
+    "type": "GUN",
+
+    "name": {
+      "str": "compact Glock pistol"
+    },
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "glock_29",
+        "name": {
+          "str": "Glock 29 pistol"
+        },
+        "description": "A modestly sized version of the highly successful Glock, chambered in hard-hitting 10mm Auto.  It is easy to carry because of its small size, but also recoils fiercely."
+      }
+    ],
+
+    "extend": { "weapon_category": ["PLATFORM_GLOCK"] }
+  },
+  {
+    "id": "glock_31",
+    "copy-from": "glock_31",
+    "type": "GUN",
+
+    "name": {
+      "str": "Glock 31"
+    },
+
+    "extend": { "weapon_category": ["PLATFORM_GLOCK"] }
+  },
+  {
+    "id": "glock_40",
+    "copy-from": "glock_40",
+    "type": "GUN",
+
+    "name": {
+      "str": "hunter Glock pistol"
+    },
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "glock_40",
+        "name": {
+          "str": "Glock 40 pistol"
+        },
+        "description": "A full-sized, long-slide version of the highly successful Glock, chambered in hard-hitting 10mm Auto.  The extra barrel length makes for slightly more accurate and powerful shots, and the extra slide length means the sights are a little easier to use."
+      }
+    ],
+
+    "extend": { "weapon_category": ["PLATFORM_GLOCK"] }
+  }
+]
