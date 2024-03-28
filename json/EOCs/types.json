@@ -40,6 +40,13 @@
             },
             "parse_tags": true
           },
+          {
+            "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_master",
+            "target_var": {
+              "context_val": "proficiency_master"
+            },
+            "parse_tags": true
+          },
 
           {
             "set_string_var": "novice",
@@ -53,12 +60,20 @@
                 "context_val": "proficiency_novice"
               }
             },
-            "then": {
-              "set_string_var": "expert",
-              "target_var": {
-                "u_val": "proficiency_target_type"
+            "then": [
+              {
+                "set_string_var": "expert",
+                "target_var": {
+                  "u_val": "proficiency_target_type"
+                }
+              },
+              {
+                "set_string_var": "novice",
+                "target_var": {
+                  "u_val": "proficiency_current_type"
+                }
               }
-            }
+            ]
           },
           {
             "if": {
@@ -66,12 +81,35 @@
                 "context_val": "proficiency_expert"
               }
             },
-            "then": {
-              "set_string_var": "master",
-              "target_var": {
-                "u_val": "proficiency_target_type"
+            "then": [
+              {
+                "set_string_var": "master",
+                "target_var": {
+                  "u_val": "proficiency_target_type"
+                }
+              },
+              {
+                "set_string_var": "expert",
+                "target_var": {
+                  "u_val": "proficiency_current_type"
+                }
               }
-            }
+            ]
+          },
+          {
+            "if": {
+              "u_has_proficiency": {
+                "context_val": "proficiency_master"
+              }
+            },
+            "then": [
+              {
+                "set_string_var": "master",
+                "target_var": {
+                  "u_val": "proficiency_current_type"
+                }
+              }
+            ]
           },
 
           {
@@ -82,7 +120,7 @@
             },
             "then": [
               {
-                "set_string_var": "proficiency_<u_val:proficiency_target_type>_equipped",
+                "set_string_var": "proficiency_<u_val:proficiency_current_type>_equipped",
                 "target_var": {
                   "context_val": "effect_from_proficiency"
                 },
