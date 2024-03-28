@@ -26,7 +26,7 @@
     "type": "effect_on_condition",
 
     "effect": [
-      { "u_lose_effect": "proficiency_familiar_equipped" },
+      { "u_lose_effect": "proficiency_novice_equipped" },
       { "u_lose_effect": "proficiency_expert_equipped" },
       { "u_lose_effect": "proficiency_master_equipped" }
     ]

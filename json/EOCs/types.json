@@ -3,88 +3,98 @@
     "id": "EOC_PLATFORM_GET_PROFICIENCY_TYPE",
     "type": "effect_on_condition",
 
-    "condition": {
-      "not": {
-        "compare_string": ["null", { "u_val": "proficiency_current_platform" }]
-      }
-    },
+    "//notes": [
+      [
+        "it doesn't seem to be possible to directly query `u_has_proficiency` with a tag-filled string",
+        "we have to use string variables in their place"
+      ],
+      "once target type reaches `master`, it can stay there safely, as gaining more experience will not cause overflows or spill over to other proficiencies"
+    ],
+
     "effect": [
       {
-        "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_familiar",
-        "target_var": {
-          "context_val": "proficiency_familiar"
-        },
-        "parse_tags": true
-      },
-      {
-        "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_expert",
-        "target_var": {
-          "context_val": "proficiency_expert"
-        },
-        "parse_tags": true
-      },
-      {
-        "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_master",
-        "target_var": {
-          "context_val": "proficiency_master"
-        },
-        "parse_tags": true
-      },
-
-      {
-        "set_string_var": "familiar",
-        "target_var": {
-          "u_val": "proficiency_target_type"
-        }
-      },
-      {
         "if": {
-          "u_has_proficiency": {
-            "context_val": "proficiency_familiar"
-          }
+          "compare_string": [
+            { "u_val": "proficiency_current_platform" },
+            "null"
+          ]
         },
         "then": {
-          "set_string_var": "proficient",
+          "set_string_var": "null",
           "target_var": {
             "u_val": "proficiency_target_type"
           }
-        }
-      },
-      {
-        "if": {
-          "u_has_proficiency": {
-            "context_val": "proficiency_expert"
-          }
         },
-        "then": {
-          "set_string_var": "master",
-          "target_var": {
-            "u_val": "proficiency_target_type"
-          }
-        }
-      },
-
-      {
-        "if": {
-          "u_has_proficiency": {
-            "context_val": "proficiency_familiar"
-          }
-        },
-        "then": [
+        "else": [
           {
-            "set_string_var": "proficiency_<u_val:proficiency_target_type>_equipped",
+            "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_novice",
             "target_var": {
-              "context_val": "effect_from_proficiency"
+              "context_val": "proficiency_novice"
+            },
+            "parse_tags": true
+          },
+          {
+            "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_expert",
+            "target_var": {
+              "context_val": "proficiency_expert"
             },
             "parse_tags": true
           },
 
-          { "u_lose_effect": "proficiency_familiar_equipped" },
-          { "u_lose_effect": "proficiency_expert_equipped" },
-          { "u_lose_effect": "proficiency_master_equipped" },
           {
-            "u_add_effect": { "context_val": "effect_from_proficiency" },
-            "duration": 31536000
+            "set_string_var": "novice",
+            "target_var": {
+              "u_val": "proficiency_target_type"
+            }
+          },
+          {
+            "if": {
+              "u_has_proficiency": {
+                "context_val": "proficiency_novice"
+              }
+            },
+            "then": {
+              "set_string_var": "expert",
+              "target_var": {
+                "u_val": "proficiency_target_type"
+              }
+            }
+          },
+          {
+            "if": {
+              "u_has_proficiency": {
+                "context_val": "proficiency_expert"
+              }
+            },
+            "then": {
+              "set_string_var": "master",
+              "target_var": {
+                "u_val": "proficiency_target_type"
+              }
+            }
+          },
+
+          {
+            "if": {
+              "u_has_proficiency": {
+                "context_val": "proficiency_novice"
+              }
+            },
+            "then": [
+              {
+                "set_string_var": "proficiency_<u_val:proficiency_target_type>_equipped",
+                "target_var": {
+                  "context_val": "effect_from_proficiency"
+                },
+                "parse_tags": true
+              },
+
+              { "run_eocs": "DEBUG_EOC_REMOVE_PROFICIENCY_EFFECTS" },
+              {
+                "u_add_effect": { "context_val": "effect_from_proficiency" },
+                "duration": 31536000
+              }
+            ]
           }
         ]
       }
