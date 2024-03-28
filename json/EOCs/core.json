@@ -23,7 +23,10 @@
           {
             "run_eocs": [
               "IS_PLATFORM_AK",
+              "IS_PLATFORM_AR15",
+
               "IS_PLATFORM_MP5",
+
               "IS_PLATFORM_GLOCK"
             ]
           },

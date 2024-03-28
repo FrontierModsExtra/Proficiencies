@@ -12,5 +12,19 @@
         "target_var": { "u_val": "proficiency_current_platform" }
       }
     ]
+  },
+  {
+    "id": "IS_PLATFORM_AR15",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "character_wields_item",
+
+    "condition": { "u_has_wielded_with_weapon_category": "PLATFORM_AR15" },
+    "effect": [
+      {
+        "set_string_var": "ar15",
+        "target_var": { "u_val": "proficiency_current_platform" }
+      }
+    ]
   }
 ]
