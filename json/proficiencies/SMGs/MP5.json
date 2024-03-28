@@ -5,7 +5,7 @@
     "category": "prof_combat",
 
     "name": { "str": "MP5 Platform Familiarity" },
-    "description": "You're familiar with how an MP5-style SMG operates and performs in the field.",
+    "description": "You're familiar with how MP5-style SMGs operate and perform in the field.",
 
     "can_learn": true,
 
