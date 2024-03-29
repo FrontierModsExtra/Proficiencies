@@ -33,5 +33,36 @@
       { "u_lose_effect": "proficiency_expert_equipped" },
       { "u_lose_effect": "proficiency_master_equipped" }
     ]
+  },
+  {
+    "id": "DEBUG_EOC_REPORT_PROFICIENCY_EFFECT",
+    "type": "effect_on_condition",
+
+    "effect": [
+      {
+        "if": { "u_has_effect": "proficiency_novice_equipped" },
+        "then": { "message": "Novice proficiency effect active" }
+      },
+      {
+        "if": { "u_has_effect": "proficiency_expert_equipped" },
+        "then": { "message": "Expert proficiency effect active" }
+      },
+      {
+        "if": { "u_has_effect": "proficiency_master_equipped" },
+        "then": { "message": "Master proficiency effect active" }
+      },
+      {
+        "if": {
+          "not": {
+            "or": [
+              { "u_has_effect": "proficiency_novice_equipped" },
+              { "u_has_effect": "proficiency_expert_equipped" },
+              { "u_has_effect": "proficiency_master_equipped" }
+            ]
+          }
+        },
+        "then": { "message": "Proficiency effects not active" }
+      }
+    ]
   }
 ]
