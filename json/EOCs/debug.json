@@ -6,7 +6,10 @@
     "effect": [
       { "u_message": "Current platform: <u_val:proficiency_current_platform>" },
       {
-        "u_message": "Current type: <u_val:proficiency_target_type>"
+        "u_message": "Target type: <u_val:proficiency_target_type>"
+      },
+      {
+        "u_message": "Current type: <u_val:proficiency_current_type>"
       }
     ]
   },
