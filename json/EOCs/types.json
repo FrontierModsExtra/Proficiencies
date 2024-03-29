@@ -49,6 +49,12 @@
           },
 
           {
+            "set_string_var": "null",
+            "target_var": {
+              "u_val": "proficiency_current_type"
+            }
+          },
+          {
             "set_string_var": "novice",
             "target_var": {
               "u_val": "proficiency_target_type"
@@ -132,7 +138,8 @@
                 "u_add_effect": { "context_val": "effect_from_proficiency" },
                 "duration": 31536000
               }
-            ]
+            ],
+            "else": { "run_eocs": "DEBUG_EOC_REMOVE_PROFICIENCY_EFFECTS" }
           }
         ]
       }
