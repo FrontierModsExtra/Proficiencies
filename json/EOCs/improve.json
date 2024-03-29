@@ -7,11 +7,6 @@
       "recheck type after each trigger in order to be able to handle overflow or be able to switch immediately"
     ],
 
-    "condition": {
-      "not": {
-        "compare_string": ["maximum", { "u_val": "proficiency_target_type" }]
-      }
-    },
     "effect": [
       {
         "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_<u_val:proficiency_target_type>",
