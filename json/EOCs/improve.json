@@ -30,7 +30,10 @@
           "_total_progress"
         ]
       },
-      { "run_eocs": "EOC_PLATFORM_GET_PROFICIENCY_TYPE" },
+      {
+        "//run_eocs": "run target/current type check again to see if, with the update to the proficiency progress, we now need to target a different type",
+        "run_eocs": "EOC_PLATFORM_GET_PROFICIENCY_TYPE"
+      },
       {
         "if": { "math": ["_total_progress", ">", "100"] },
         "then": [
