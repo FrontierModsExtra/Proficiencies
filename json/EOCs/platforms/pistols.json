@@ -26,5 +26,19 @@
         "target_var": { "u_val": "proficiency_current_platform" }
       }
     ]
+  },
+  {
+    "id": "IS_PLATFORM_M1911",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "character_wields_item",
+
+    "condition": { "u_has_wielded_with_weapon_category": "PLATFORM_M1911" },
+    "effect": [
+      {
+        "set_string_var": "m1911",
+        "target_var": { "u_val": "proficiency_current_platform" }
+      }
+    ]
   }
 ]

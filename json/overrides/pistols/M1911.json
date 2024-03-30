@@ -1,0 +1,84 @@
+[
+  {
+    "id": "m1911",
+    "copy-from": "m1911",
+    "type": "GUN",
+
+    "name": {
+      "str": "M1911 pistol"
+    },
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "m1911",
+        "name": {
+          "str": "M1911 pistol"
+        },
+        "//": "You can get 'em for over US$1K if you want.  This is a fairly cheap remake.",
+        "description": "The M1911 was the US Military standard-issue sidearm for most of the 20th Century.  It remains one of the most popular .45 pistols today."
+      },
+      {
+        "id": "m1911_MEU",
+        "name": {
+          "str": "M45A1 pistol"
+        },
+        "description": "The M45A1 supplanted earlier M45 MEUSOC pistols in use by Force Recon elements of Marine Expeditionary Units.  Where the original M45 pistols were gutted M1911A1s hand-fitted by USMC armorers, the updated M45A1s are hardly different from any other commercial 1911 design, save for their dual recoil springs.  Most were replaced in 2016 with Glock 19s due to logistics issues."
+      }
+    ],
+
+    "extend": { "weapon_category": ["PLATFORM_M1911"] }
+  },
+  {
+    "id": "m1911-460",
+    "copy-from": "m1911-460",
+    "type": "GUN",
+
+    "name": {
+      "str": "1911-460"
+    },
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "m1911",
+        "name": {
+          "str": "M1911 pistol"
+        },
+        "//": "You can get 'em for over US$1K if you want.  This is a fairly cheap remake.",
+        "description": "The M1911 was the US Military standard-issue sidearm for most of the 20th Century.  It remains one of the most popular .45 pistols today."
+      },
+      {
+        "id": "m1911_MEU",
+        "name": {
+          "str": "M45A1 pistol"
+        },
+        "description": "The M45A1 supplanted earlier M45 MEUSOC pistols in use by Force Recon elements of Marine Expeditionary Units.  Where the original M45 pistols were gutted M1911A1s hand-fitted by USMC armorers, the updated M45A1s are hardly different from any other commercial 1911 design, save for their dual recoil springs.  Most were replaced in 2016 with Glock 19s due to logistics issues."
+      }
+    ],
+
+    "extend": { "weapon_category": ["PLATFORM_M1911"] }
+  },
+  {
+    "id": "af2011a1_38super",
+    "copy-from": "af2011a1_38super",
+    "type": "GUN",
+
+    "name": {
+      "str": "M1911A1"
+    },
+
+    "extend": { "weapon_category": ["PLATFORM_M1911"] }
+  },
+  {
+    "id": "m1911a1_38super",
+    "copy-from": "m1911a1_38super",
+    "type": "GUN",
+
+    "name": {
+      "str": "AF2011A1 .38 Super"
+    },
+
+    "extend": { "weapon_category": ["PLATFORM_M1911"] }
+  }
+]
