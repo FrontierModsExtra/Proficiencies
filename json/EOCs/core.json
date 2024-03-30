@@ -27,6 +27,7 @@
 
               "IS_PLATFORM_MP5",
 
+              "IS_PLATFORM_P320",
               "IS_PLATFORM_GLOCK"
             ]
           },

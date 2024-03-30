@@ -1,0 +1,46 @@
+[
+  {
+    "id": "proficiency_platform_p320_novice",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "SIG P320 Platform Familiarity" },
+    "description": "You're familiar with how SIG Sauer P320 and derived pistols operate and perform in the field.",
+
+    "can_learn": true,
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "8 h"
+  },
+  {
+    "id": "proficiency_platform_p320_expert",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "GIS P320 Platform Expertise" },
+    "description": " TBD ",
+
+    "can_learn": true,
+    "required_proficiencies": ["proficiency_platform_p320_novice"],
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "16 h"
+  },
+  {
+    "id": "proficiency_platform_p320_master",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "SIG P320 Platform Mastery" },
+    "description": " TBD ",
+
+    "can_learn": true,
+    "required_proficiencies": ["proficiency_platform_p320_expert"],
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "32 h"
+  }
+]
