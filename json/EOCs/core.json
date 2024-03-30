@@ -26,6 +26,8 @@
               "IS_PLATFORM_AR15",
 
               "IS_PLATFORM_MP5",
+              "IS_PLATFORM_MP7",
+              "IS_PLATFORM_VECTOR",
 
               "IS_PLATFORM_P320",
               "IS_PLATFORM_GLOCK"

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "TDI",
+    "copy-from": "TDI",
+    "type": "GUN",
+
+    "name": {
+      "str": "Glock SMG"
+    },
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "TDI",
+        "name": {
+          "str": "Vector SMG .45"
+        },
+        "description": "The Vector SMG is a delayed blowback submachine gun with a unique, in-line design that places both the shooter's hand and shoulder in line with the bore axis, reducing muzzle climb during bursts.  This one is chambered in .45 ACP."
+      }
+    ],
+
+    "extend": { "weapon_category": ["PLATFORM_VECTOR"] }
+  }
+]

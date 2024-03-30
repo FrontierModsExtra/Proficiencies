@@ -1,0 +1,13 @@
+[
+  {
+    "id": "hk_mp7",
+    "copy-from": "hk_mp7",
+    "type": "GUN",
+
+    "name": {
+      "str": "H&K MP7A2"
+    },
+
+    "extend": { "weapon_category": ["PLATFORM_MP7"] }
+  }
+]
