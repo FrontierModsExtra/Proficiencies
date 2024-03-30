@@ -18,7 +18,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "GIS P320 Platform Expertise" },
+    "name": { "str": "SIG P320 Platform Expertise" },
     "description": " TBD ",
 
     "can_learn": true,
