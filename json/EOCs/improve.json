@@ -17,7 +17,7 @@
         "math": [
           "_int_modifier",
           "=",
-          "( ( u_val( 'intelligence' ) - 8 ) ^ ( pi / 10 ) )"
+          "1 + ( ( u_val( 'intelligence' ) - 8 ) / 12 )"
         ]
       },
       {
@@ -39,25 +39,29 @@
         }
       },
       {
-        "math": ["_skill_modifier", "=", "max( 0, u_skill( 'gun' ) - 3 ) / 3"]
+        "math": [
+          "_skill_modifier",
+          "=",
+          "max( 1, ( u_skill( 'gun' ) - 3 ) / 3 )"
+        ]
       },
       {
         "math": [
           "_new_progress",
           "=",
-          "max( 0, ( ( rand( 4 ) + _int_modifier + _skill_modifier ) / 18 ) )"
+          "max( 1, rng( 4, 64 ) * _skill_modifier * _int_modifier )"
         ]
       },
       {
         "math": [
           "_total_progress",
           "=",
-          "u_proficiency(_proficiency, 'format': 'percent') + _new_progress"
+          "u_proficiency(_proficiency, 'format': 'time_spent') + _new_progress"
         ]
       },
       {
         "math": [
-          "u_proficiency(_proficiency, 'format': 'percent')",
+          "u_proficiency(_proficiency, 'format': 'time_spent')",
           "=",
           "_total_progress"
         ]
@@ -67,10 +71,20 @@
         "run_eocs": "EOC_PLATFORM_GET_PROFICIENCY_TYPE"
       },
       {
-        "if": { "math": ["_total_progress", ">", "100"] },
+        "if": {
+          "math": [
+            "_total_progress",
+            ">",
+            "u_proficiency(_proficiency, 'format': 'total_time_required')"
+          ]
+        },
         "then": [
           {
-            "math": ["_progress_overflow", "=", "_total_progress - 100"]
+            "math": [
+              "_progress_overflow",
+              "=",
+              "_total_progress - u_proficiency(_proficiency, 'format': 'total_time_required')"
+            ]
           },
           {
             "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_<u_val:proficiency_target_type>",
@@ -79,7 +93,7 @@
           },
           {
             "math": [
-              "u_proficiency(_proficiency, 'format': 'percent')",
+              "u_proficiency(_proficiency, 'format': 'time_spent')",
               "+=",
               "_progress_overflow"
             ]
