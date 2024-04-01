@@ -19,7 +19,7 @@
     "category": "prof_combat",
 
     "name": { "str": "M1911 Platform Expertise" },
-    "description": " TBD ",
+    "description": "You've managed to gather a significant skill with M1911 and similar pistols.",
 
     "can_learn": true,
     "required_proficiencies": ["proficiency_platform_m1911_novice"],
@@ -34,7 +34,7 @@
     "category": "prof_combat",
 
     "name": { "str": "M1911 Platform Mastery" },
-    "description": " TBD ",
+    "description": "M1911 makes you feel like a warrior.",
 
     "can_learn": true,
     "required_proficiencies": ["proficiency_platform_m1911_expert"],
