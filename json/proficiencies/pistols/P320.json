@@ -4,7 +4,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "SIG P320 Platform Familiarity" },
+    "name": { "str": "P320 Familiarity" },
     "description": "You're familiar with how SIG Sauer P320 and derived pistols operate and perform in the field.",
 
     "can_learn": true,
@@ -18,7 +18,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "SIG P320 Platform Expertise" },
+    "name": { "str": "P320 Expertise" },
     "description": "You're confident in using SIG Sauer P320 and its military counterparts.",
 
     "can_learn": true,
@@ -33,7 +33,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "SIG P320 Platform Mastery" },
+    "name": { "str": "P320 Mastery" },
     "description": "Any P320 is a tool of war in your hands.",
 
     "can_learn": true,

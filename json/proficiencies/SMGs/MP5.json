@@ -4,7 +4,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "MP5 Platform Familiarity" },
+    "name": { "str": "MP5 Familiarity" },
     "description": "You're familiar with how MP5-style SMGs operate and perform in the field.",
 
     "can_learn": true,
@@ -18,7 +18,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "MP5 Platform Expertise" },
+    "name": { "str": "MP5 Expertise" },
     "description": "You can handle an MP5-style SMG like a professional, knowing quite well how it behaves.",
 
     "can_learn": true,
@@ -33,7 +33,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "MP5 Platform Mastery" },
+    "name": { "str": "MP5 Mastery" },
     "description": "MP5-style SMG operation holds no secrets to you.",
 
     "can_learn": true,

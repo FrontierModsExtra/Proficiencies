@@ -4,7 +4,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "Glock Platform Familiarity" },
+    "name": { "str": "Glock Familiarity" },
     "description": "You're familiar with how Glock pistols operate and perform in the field.",
 
     "can_learn": true,
@@ -18,7 +18,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "Glock Platform Expertise" },
+    "name": { "str": "Glock Expertise" },
     "description": "You're comfortable with using Glock pistols, no matter their size or length.",
 
     "can_learn": true,
@@ -33,7 +33,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "Glock Platform Mastery" },
+    "name": { "str": "Glock Mastery" },
     "description": "The Glock pistol in your hand is an extension of yourself.",
 
     "can_learn": true,

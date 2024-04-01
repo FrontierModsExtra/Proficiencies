@@ -4,7 +4,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "AK Platform Familiarity" },
+    "name": { "str": "AK Familiarity" },
     "description": "You're familiar with how an AK-family rifle operates and performs in the field.",
 
     "can_learn": true,
@@ -18,7 +18,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "AK Platform Expertise" },
+    "name": { "str": "AK Expertise" },
     "description": "You've gotten pretty handy with the AK family of rifles, understanding their operation intimately.",
 
     "can_learn": true,
@@ -33,7 +33,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "AK Platform Mastery" },
+    "name": { "str": "AK Mastery" },
     "description": "You know how to make AK rifles sing in your hands.",
 
     "can_learn": true,

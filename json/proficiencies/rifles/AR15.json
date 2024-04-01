@@ -4,7 +4,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "AR-15 Platform Familiarity" },
+    "name": { "str": "AR-15 Familiarity" },
     "description": "You're familiar with how the AR-15 family of rifles operates and performs in the field.",
 
     "can_learn": true,
@@ -18,7 +18,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "AR-15 Platform Expertise" },
+    "name": { "str": "AR-15 Expertise" },
     "description": "You've learned how to use the AR-15 family of rifles confidently and effectively.",
 
     "can_learn": true,
@@ -33,7 +33,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "AR-15 Platform Mastery" },
+    "name": { "str": "AR-15 Mastery" },
     "description": "AR-15 rifles are an instrument of destruction in your hands.",
 
     "can_learn": true,

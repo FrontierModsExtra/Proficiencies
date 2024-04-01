@@ -4,7 +4,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "MP7 Platform Familiarity" },
+    "name": { "str": "MP7 Familiarity" },
     "description": "You're familiar with how MP7 operates and performs in the field.",
 
     "can_learn": true,
@@ -18,7 +18,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "MP7 Platform Expertise" },
+    "name": { "str": "MP7 Expertise" },
     "description": "Your grip on the MP7 is solid, and your aim with it is true.",
 
     "can_learn": true,
@@ -33,7 +33,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "MP7 Platform Mastery" },
+    "name": { "str": "MP7 Mastery" },
     "description": "The MP7 is like an extension of your profile.",
 
     "can_learn": true,

@@ -4,7 +4,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "M1911 Platform Familiarity" },
+    "name": { "str": "M1911 Familiarity" },
     "description": "You're familiar with how M1911 and derived pistols operate and perform in the field.",
 
     "can_learn": true,
@@ -18,7 +18,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "M1911 Platform Expertise" },
+    "name": { "str": "M1911 Expertise" },
     "description": "You've managed to gather a significant skill with M1911 and similar pistols.",
 
     "can_learn": true,
@@ -33,7 +33,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "M1911 Platform Mastery" },
+    "name": { "str": "M1911 Mastery" },
     "description": "M1911 makes you feel like a warrior.",
 
     "can_learn": true,

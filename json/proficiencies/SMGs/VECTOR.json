@@ -4,7 +4,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "Vector Platform Familiarity" },
+    "name": { "str": "Vector SMG Familiarity" },
     "description": "You're familiar with how Vector operates and performs in the field.",
 
     "can_learn": true,
@@ -18,7 +18,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "Vector Platform Expertise" },
+    "name": { "str": "Vector SMG Expertise" },
     "description": "You find it easy to handle Vector.",
 
     "can_learn": true,
@@ -33,7 +33,7 @@
     "type": "proficiency",
     "category": "prof_combat",
 
-    "name": { "str": "Vector Platform Mastery" },
+    "name": { "str": "Vector SMG Mastery" },
     "description": "The recoil mitigation of the Vector seems to have aligned itself with your own natural rhythm.",
 
     "can_learn": true,
