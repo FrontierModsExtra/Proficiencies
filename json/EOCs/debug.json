@@ -14,6 +14,21 @@
     ]
   },
   {
+    "id": "DEBUG_EOC_ANNUL_PLATFORM_AND_TYPE",
+    "type": "effect_on_condition",
+
+    "effect": [
+      {
+        "set_string_var": "null",
+        "target_var": { "u_val": "proficiency_current_platform" }
+      },
+      {
+        "set_string_var": "null",
+        "target_var": { "u_val": "proficiency_target_type" }
+      }
+    ]
+  },
+  {
     "id": "DEBUG_EOC_RECALCULATE_PLATFORM_AND_TYPE",
     "type": "effect_on_condition",
 
@@ -24,6 +39,7 @@
       ]
     }
   },
+
   {
     "id": "DEBUG_EOC_REMOVE_PROFICIENCY_EFFECTS",
     "type": "effect_on_condition",
@@ -64,5 +80,18 @@
         "then": { "message": "Proficiency effects not active" }
       }
     ]
+  },
+
+  {
+    "id": "DEBUG_EOC_ENABLE_REPORTING_PROFICIENCIES",
+    "type": "effect_on_condition",
+
+    "effect": { "math": ["reporting_proficiencies", "=", "1"] }
+  },
+  {
+    "id": "DEBUG_EOC_DISABLE_REPORTING_PROFICIENCIES",
+    "type": "effect_on_condition",
+
+    "effect": { "math": ["reporting_proficiencies", "=", "0"] }
   }
 ]
