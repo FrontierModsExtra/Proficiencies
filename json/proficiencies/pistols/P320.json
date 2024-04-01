@@ -19,7 +19,7 @@
     "category": "prof_combat",
 
     "name": { "str": "SIG P320 Platform Expertise" },
-    "description": " TBD ",
+    "description": "You're confident in using SIG Sauer P320 and its military counterparts.",
 
     "can_learn": true,
     "required_proficiencies": ["proficiency_platform_p320_novice"],
@@ -34,7 +34,7 @@
     "category": "prof_combat",
 
     "name": { "str": "SIG P320 Platform Mastery" },
-    "description": " TBD ",
+    "description": "Any P320 is a tool of war in your hands.",
 
     "can_learn": true,
     "required_proficiencies": ["proficiency_platform_p320_expert"],
