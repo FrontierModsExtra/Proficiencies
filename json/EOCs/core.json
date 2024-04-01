@@ -25,7 +25,8 @@
 
               "IS_PLATFORM_P320",
               "IS_PLATFORM_GLOCK",
-              "IS_PLATFORM_M1911"
+              "IS_PLATFORM_M1911",
+              "IS_PLATFORM_PPQ"
             ]
           },
           { "run_eocs": "EOC_PLATFORM_GET_PROFICIENCY_TYPE" }

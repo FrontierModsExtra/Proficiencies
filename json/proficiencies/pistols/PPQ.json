@@ -1,0 +1,46 @@
+[
+  {
+    "id": "proficiency_platform_ppq_novice",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "PPQ Familiarity" },
+    "description": "You're familiar with how Walther PPQ operates and performs in the field.",
+
+    "can_learn": true,
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "8 h"
+  },
+  {
+    "id": "proficiency_platform_ppq_expert",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "PPQ Expertise" },
+    "description": "You have a good grip on how the PPQ handles.",
+
+    "can_learn": true,
+    "required_proficiencies": ["proficiency_platform_ppq_novice"],
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "16 h"
+  },
+  {
+    "id": "proficiency_platform_ppq_master",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "PPQ Mastery" },
+    "description": "You almost feel like a British secret agent while wielding a PPQ.  Almost.",
+
+    "can_learn": true,
+    "required_proficiencies": ["proficiency_platform_ppq_expert"],
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "32 h"
+  }
+]
