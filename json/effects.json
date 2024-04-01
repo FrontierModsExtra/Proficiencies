@@ -32,6 +32,10 @@
           {
             "value": "WEAPON_DISPERSION",
             "multiply": -0.01
+          },
+          {
+            "value": "RANGE",
+            "add": 1
           }
         ]
       }
@@ -51,6 +55,10 @@
           {
             "value": "WEAPON_DISPERSION",
             "multiply": -0.015
+          },
+          {
+            "value": "RANGE",
+            "add": 2
           }
         ]
       }
