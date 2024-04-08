@@ -138,7 +138,7 @@
               },
               {
                 "u_add_effect": { "context_val": "effect_from_proficiency" },
-                "duration": 31536000
+                "duration": "PERMANENT"
               }
             ],
             "else": {
