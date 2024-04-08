@@ -9,7 +9,7 @@
     ],
 
     "effect": [
-      { "run_eocs": "DEBUG_EOC_ANNUL_PLATFORM_AND_TYPE" },
+      { "run_eocs": "debug_Proficiencies_EOC_ANNUL_PLATFORM_AND_TYPE" },
 
       {
         "if": "u_has_weapon",
@@ -45,10 +45,7 @@
       "for cases when the character starts with a firearm in their hands"
     ],
 
-    "effect": [
-      { "math": ["reporting_proficiencies", "=", "0"] },
-      { "run_eocs": "EOC_PROFICIENCY_CHECK_PLATFORM" }
-    ]
+    "effect": [{ "run_eocs": "EOC_PROFICIENCY_CHECK_PLATFORM" }]
   },
   {
     "id": "EOC_PROFICIENCY_ON_WIELD",

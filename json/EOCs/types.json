@@ -133,13 +133,17 @@
                 "parse_tags": true
               },
 
-              { "run_eocs": "DEBUG_EOC_REMOVE_PROFICIENCY_EFFECTS" },
+              {
+                "run_eocs": "debug_Proficiencies_EOC_REMOVE_PROFICIENCY_EFFECTS"
+              },
               {
                 "u_add_effect": { "context_val": "effect_from_proficiency" },
                 "duration": 31536000
               }
             ],
-            "else": { "run_eocs": "DEBUG_EOC_REMOVE_PROFICIENCY_EFFECTS" }
+            "else": {
+              "run_eocs": "debug_Proficiencies_EOC_REMOVE_PROFICIENCY_EFFECTS"
+            }
           }
         ]
       }

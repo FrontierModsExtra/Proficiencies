@@ -1,6 +1,6 @@
 [
   {
-    "id": "DEBUG_EOC_REPORT_PLATFORM_AND_TYPE",
+    "id": "debug_Proficiencies_EOC_REPORT_PLATFORM_AND_TYPE",
     "type": "effect_on_condition",
 
     "effect": [
@@ -14,7 +14,7 @@
     ]
   },
   {
-    "id": "DEBUG_EOC_ANNUL_PLATFORM_AND_TYPE",
+    "id": "debug_Proficiencies_EOC_ANNUL_PLATFORM_AND_TYPE",
     "type": "effect_on_condition",
 
     "effect": [
@@ -29,7 +29,7 @@
     ]
   },
   {
-    "id": "DEBUG_EOC_RECALCULATE_PLATFORM_AND_TYPE",
+    "id": "debug_Proficiencies_EOC_RECALCULATE_PLATFORM_AND_TYPE",
     "type": "effect_on_condition",
 
     "effect": {
@@ -41,7 +41,7 @@
   },
 
   {
-    "id": "DEBUG_EOC_REMOVE_PROFICIENCY_EFFECTS",
+    "id": "debug_Proficiencies_EOC_REMOVE_PROFICIENCY_EFFECTS",
     "type": "effect_on_condition",
 
     "effect": [
@@ -51,22 +51,10 @@
     ]
   },
   {
-    "id": "DEBUG_EOC_REPORT_PROFICIENCY_EFFECT",
+    "id": "debug_Proficiencies_EOC_REPORT_PROFICIENCY_EFFECT",
     "type": "effect_on_condition",
 
     "effect": [
-      {
-        "if": { "u_has_effect": "proficiency_novice_equipped" },
-        "then": { "message": "Novice proficiency effect active" }
-      },
-      {
-        "if": { "u_has_effect": "proficiency_expert_equipped" },
-        "then": { "message": "Expert proficiency effect active" }
-      },
-      {
-        "if": { "u_has_effect": "proficiency_master_equipped" },
-        "then": { "message": "Master proficiency effect active" }
-      },
       {
         "if": {
           "not": {
@@ -78,20 +66,19 @@
           }
         },
         "then": { "message": "Proficiency effects not active" }
+      },
+      {
+        "if": { "u_has_effect": "proficiency_novice_equipped" },
+        "then": { "message": "Novice proficiency effect active" }
+      },
+      {
+        "if": { "u_has_effect": "proficiency_expert_equipped" },
+        "then": { "message": "Expert proficiency effect active" }
+      },
+      {
+        "if": { "u_has_effect": "proficiency_master_equipped" },
+        "then": { "message": "Master proficiency effect active" }
       }
     ]
-  },
-
-  {
-    "id": "DEBUG_EOC_ENABLE_REPORTING_PROFICIENCIES",
-    "type": "effect_on_condition",
-
-    "effect": { "math": ["reporting_proficiencies", "=", "1"] }
-  },
-  {
-    "id": "DEBUG_EOC_DISABLE_REPORTING_PROFICIENCIES",
-    "type": "effect_on_condition",
-
-    "effect": { "math": ["reporting_proficiencies", "=", "0"] }
   }
 ]
