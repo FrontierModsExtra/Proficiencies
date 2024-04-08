@@ -1,0 +1,46 @@
+[
+  {
+    "id": "proficiency_platform_p90_novice",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "P90 Familiarity" },
+    "description": "You're familiar with how FN P90 operates and performs in the field.",
+
+    "can_learn": true,
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "8 h"
+  },
+  {
+    "id": "proficiency_platform_p90_expert",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "P90 Expertise" },
+    "description": "You find it easy to handle FN P90.",
+
+    "can_learn": true,
+    "required_proficiencies": ["proficiency_platform_p90_novice"],
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "16 h"
+  },
+  {
+    "id": "proficiency_platform_p90_master",
+    "type": "proficiency",
+    "category": "prof_combat",
+
+    "name": { "str": "P90 Mastery" },
+    "description": "The unusual form of P90 sits perfectly in your hands.",
+
+    "can_learn": true,
+    "required_proficiencies": ["proficiency_platform_p90_expert"],
+
+    "default_time_multiplier": 1.5,
+    "default_skill_penalty": 0.2,
+    "time_to_learn": "32 h"
+  }
+]

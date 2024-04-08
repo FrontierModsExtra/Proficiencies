@@ -22,11 +22,13 @@
               "IS_PLATFORM_MP5",
               "IS_PLATFORM_MP7",
               "IS_PLATFORM_VECTOR",
+              "IS_PLATFORM_P90",
 
               "IS_PLATFORM_P320",
               "IS_PLATFORM_GLOCK",
               "IS_PLATFORM_M1911",
-              "IS_PLATFORM_PPQ"
+              "IS_PLATFORM_PPQ",
+              "IS_PLATFORM_FN57"
             ]
           },
           { "run_eocs": "EOC_PLATFORM_GET_PROFICIENCY_TYPE" }
