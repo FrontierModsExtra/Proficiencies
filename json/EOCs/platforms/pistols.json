@@ -54,5 +54,19 @@
         "target_var": { "u_val": "proficiency_current_platform" }
       }
     ]
+  },
+  {
+    "id": "IS_PLATFORM_FN57",
+    "type": "effect_on_condition",
+    "eoc_type": "EVENT",
+    "required_event": "character_wields_item",
+
+    "condition": { "u_has_wielded_with_weapon_category": "PLATFORM_FN57" },
+    "effect": [
+      {
+        "set_string_var": "fn57",
+        "target_var": { "u_val": "proficiency_current_platform" }
+      }
+    ]
   }
 ]
