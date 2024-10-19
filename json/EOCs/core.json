@@ -1,6 +1,6 @@
 [
   {
-    "id": "EOC_PROFICIENCY_CHECK_PLATFORM",
+    "id": "Proficiencies_EOC_GET_PLATFORM",
     "type": "effect_on_condition",
 
     "//notes": [
@@ -9,7 +9,7 @@
     ],
 
     "effect": [
-      { "run_eocs": "debug_Proficiencies_EOC_ANNUL_PLATFORM_AND_TYPE" },
+      { "run_eocs": "debug_Proficiencies_EOC_ANNUL_PLATFORM_AND_GRADE" },
 
       {
         "if": "u_has_weapon",
@@ -31,7 +31,7 @@
               "IS_PLATFORM_FN57"
             ]
           },
-          { "run_eocs": "EOC_PLATFORM_GET_PROFICIENCY_TYPE" }
+          { "run_eocs": "Proficiencies_EOC_GET_PROFICIENCY_GRADE" }
         ]
       }
     ]
@@ -47,31 +47,31 @@
       "for cases when the character starts with a firearm in their hands"
     ],
 
-    "effect": [{ "run_eocs": "EOC_PROFICIENCY_CHECK_PLATFORM" }]
+    "effect": [{ "run_eocs": "Proficiencies_EOC_GET_PLATFORM" }]
   },
   {
-    "id": "EOC_PROFICIENCY_ON_WIELD",
+    "id": "Proficiencies_EOC_ON_WIELD",
     "type": "effect_on_condition",
     "eoc_type": "EVENT",
     "required_event": "character_wields_item",
 
-    "effect": [{ "run_eocs": "EOC_PROFICIENCY_CHECK_PLATFORM" }]
+    "effect": [{ "run_eocs": "Proficiencies_EOC_GET_PLATFORM" }]
   },
 
   {
-    "id": "EOC_PROFICIENCY_ON_HIT_MONSTER",
+    "id": "Proficiencies_EOC_ON_HIT_MONSTER",
     "type": "effect_on_condition",
     "eoc_type": "EVENT",
     "required_event": "character_ranged_attacks_monster",
 
-    "effect": [{ "run_eocs": "EOC_PROFICIENCY_IMPROVE" }]
+    "effect": [{ "run_eocs": "Proficiencies_EOC_IMPROVE" }]
   },
   {
-    "id": "EOC_PROFICIENCY_ON_HIT_CHARACTER",
+    "id": "Proficiencies_EOC_ON_HIT_CHARACTER",
     "type": "effect_on_condition",
     "eoc_type": "EVENT",
     "required_event": "character_ranged_attacks_character",
 
-    "effect": [{ "run_eocs": "EOC_PROFICIENCY_IMPROVE" }]
+    "effect": [{ "run_eocs": "Proficiencies_EOC_IMPROVE" }]
   }
 ]

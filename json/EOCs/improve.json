@@ -1,6 +1,6 @@
 [
   {
-    "id": "EOC_PROFICIENCY_IMPROVE",
+    "id": "Proficiencies_EOC_IMPROVE",
     "type": "effect_on_condition",
 
     "//notes": [
@@ -68,7 +68,7 @@
       },
       {
         "//run_eocs": "run target/current type check again to see if, with the update to the proficiency progress, we now need to target a different type",
-        "run_eocs": "EOC_PLATFORM_GET_PROFICIENCY_TYPE"
+        "run_eocs": "Proficiencies_EOC_GET_PROFICIENCY_GRADE"
       },
       {
         "if": {

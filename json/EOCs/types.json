@@ -1,6 +1,6 @@
 [
   {
-    "id": "EOC_PLATFORM_GET_PROFICIENCY_TYPE",
+    "id": "Proficiencies_EOC_GET_PROFICIENCY_GRADE",
     "type": "effect_on_condition",
 
     "//notes": [
@@ -21,9 +21,7 @@
         },
         "then": {
           "set_string_var": "null",
-          "target_var": {
-            "u_val": "proficiency_target_type"
-          }
+          "target_var": { "u_val": "proficiency_target_grade" }
         },
         "else": [
           {
