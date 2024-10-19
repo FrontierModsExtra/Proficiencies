@@ -23,127 +23,110 @@
           "set_string_var": "null",
           "target_var": { "u_val": "proficiency_target_grade" }
         },
-        "else": [
-          {
-            "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_novice",
-            "target_var": {
-              "context_val": "proficiency_novice"
-            },
-            "parse_tags": true
+        "else": {
+          "if": {
+            "compare_string": [{ "u_val": "proficiency_current_platform" }, ""]
           },
-          {
-            "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_expert",
-            "target_var": {
-              "context_val": "proficiency_expert"
+          "then": [
+            {
+              "set_string_var": "null",
+              "target_var": { "u_val": "proficiency_current_platform" }
             },
-            "parse_tags": true
-          },
-          {
-            "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_master",
-            "target_var": {
-              "context_val": "proficiency_master"
-            },
-            "parse_tags": true
-          },
-
-          {
-            "set_string_var": "null",
-            "target_var": {
-              "u_val": "proficiency_current_type"
+            {
+              "set_string_var": "null",
+              "target_var": { "u_val": "proficiency_target_grade" }
             }
-          },
-          {
-            "set_string_var": "novice",
-            "target_var": {
-              "u_val": "proficiency_target_type"
-            }
-          },
-          {
-            "if": {
-              "u_has_proficiency": {
-                "context_val": "proficiency_novice"
-              }
+          ],
+          "else": [
+            {
+              "set_string_var": "proficiency_<u_val:proficiency_current_platform>_novice",
+              "target_var": { "context_val": "proficiency_novice" },
+              "parse_tags": true
             },
-            "then": [
-              {
-                "set_string_var": "expert",
-                "target_var": {
-                  "u_val": "proficiency_target_type"
-                }
-              },
-              {
-                "set_string_var": "novice",
-                "target_var": {
-                  "u_val": "proficiency_current_type"
-                }
-              }
-            ]
-          },
-          {
-            "if": {
-              "u_has_proficiency": {
-                "context_val": "proficiency_expert"
-              }
+            {
+              "set_string_var": "proficiency_<u_val:proficiency_current_platform>_expert",
+              "target_var": { "context_val": "proficiency_expert" },
+              "parse_tags": true
             },
-            "then": [
-              {
-                "set_string_var": "master",
-                "target_var": {
-                  "u_val": "proficiency_target_type"
-                }
-              },
-              {
-                "set_string_var": "expert",
-                "target_var": {
-                  "u_val": "proficiency_current_type"
-                }
-              }
-            ]
-          },
-          {
-            "if": {
-              "u_has_proficiency": {
-                "context_val": "proficiency_master"
-              }
+            {
+              "set_string_var": "proficiency_<u_val:proficiency_current_platform>_master",
+              "target_var": { "context_val": "proficiency_master" },
+              "parse_tags": true
             },
-            "then": [
-              {
-                "set_string_var": "master",
-                "target_var": {
-                  "u_val": "proficiency_current_type"
-                }
-              }
-            ]
-          },
 
-          {
-            "if": {
-              "u_has_proficiency": {
-                "context_val": "proficiency_novice"
-              }
+            {
+              "set_string_var": "null",
+              "target_var": { "u_val": "proficiency_current_grade" }
             },
-            "then": [
-              {
-                "set_string_var": "proficiency_<u_val:proficiency_current_type>_equipped",
-                "target_var": {
-                  "context_val": "effect_from_proficiency"
+            {
+              "set_string_var": "novice",
+              "target_var": { "u_val": "proficiency_target_grade" }
+            },
+            {
+              "if": {
+                "u_has_proficiency": { "context_val": "proficiency_novice" }
+              },
+              "then": [
+                {
+                  "set_string_var": "expert",
+                  "target_var": { "u_val": "proficiency_target_grade" }
                 },
-                "parse_tags": true
+                {
+                  "set_string_var": "novice",
+                  "target_var": { "u_val": "proficiency_current_grade" }
+                }
+              ]
+            },
+            {
+              "if": {
+                "u_has_proficiency": { "context_val": "proficiency_expert" }
               },
+              "then": [
+                {
+                  "set_string_var": "master",
+                  "target_var": { "u_val": "proficiency_target_grade" }
+                },
+                {
+                  "set_string_var": "expert",
+                  "target_var": { "u_val": "proficiency_current_grade" }
+                }
+              ]
+            },
+            {
+              "if": {
+                "u_has_proficiency": { "context_val": "proficiency_master" }
+              },
+              "then": [
+                {
+                  "set_string_var": "master",
+                  "target_var": { "u_val": "proficiency_current_grade" }
+                }
+              ]
+            },
 
-              {
-                "run_eocs": "debug_Proficiencies_EOC_REMOVE_PROFICIENCY_EFFECTS"
+            {
+              "if": {
+                "u_has_proficiency": { "context_val": "proficiency_novice" }
               },
-              {
-                "u_add_effect": { "context_val": "effect_from_proficiency" },
-                "duration": "PERMANENT"
+              "then": [
+                {
+                  "set_string_var": "proficiency_<u_val:proficiency_current_grade>_equipped",
+                  "target_var": { "context_val": "effect_from_proficiency" },
+                  "parse_tags": true
+                },
+
+                { "run_eocs": "debug_Proficiencies_EOC_REMOVE_EFFECTS" },
+                {
+                  "u_add_effect": { "context_val": "effect_from_proficiency" },
+                  "duration": "PERMANENT"
+                }
+              ],
+              "else": {
+                "run_eocs": "debug_Proficiencies_EOC_REMOVE_EFFECTS"
               }
-            ],
-            "else": {
-              "run_eocs": "debug_Proficiencies_EOC_REMOVE_PROFICIENCY_EFFECTS"
             }
-          }
-        ]
+          ]
+        }
       }
     ]
   }
