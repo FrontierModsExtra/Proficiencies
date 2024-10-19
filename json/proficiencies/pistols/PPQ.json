@@ -1,6 +1,6 @@
 [
   {
-    "id": "proficiency_platform_ppq_novice",
+    "id": "proficiency_ppq_novice",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -14,7 +14,7 @@
     "time_to_learn": "8 h"
   },
   {
-    "id": "proficiency_platform_ppq_expert",
+    "id": "proficiency_ppq_expert",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -22,14 +22,14 @@
     "description": "You have a good grip on how the PPQ handles.",
 
     "can_learn": true,
-    "required_proficiencies": ["proficiency_platform_ppq_novice"],
+    "required_proficiencies": ["proficiency_ppq_novice"],
 
     "default_time_multiplier": 1.5,
     "default_skill_penalty": 0.2,
     "time_to_learn": "16 h"
   },
   {
-    "id": "proficiency_platform_ppq_master",
+    "id": "proficiency_ppq_master",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -37,7 +37,7 @@
     "description": "You almost feel like a British secret agent while wielding a PPQ.  Almost.",
 
     "can_learn": true,
-    "required_proficiencies": ["proficiency_platform_ppq_expert"],
+    "required_proficiencies": ["proficiency_ppq_expert"],
 
     "default_time_multiplier": 1.5,
     "default_skill_penalty": 0.2,

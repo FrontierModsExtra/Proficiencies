@@ -1,6 +1,6 @@
 [
   {
-    "id": "proficiency_platform_fn57_novice",
+    "id": "proficiency_fn57_novice",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -14,7 +14,7 @@
     "time_to_learn": "8 h"
   },
   {
-    "id": "proficiency_platform_fn57_expert",
+    "id": "proficiency_fn57_expert",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -22,14 +22,14 @@
     "description": "You have a good grip on how the FN Five-seveN handles.",
 
     "can_learn": true,
-    "required_proficiencies": ["proficiency_platform_fn57_novice"],
+    "required_proficiencies": ["proficiency_fn57_novice"],
 
     "default_time_multiplier": 1.5,
     "default_skill_penalty": 0.2,
     "time_to_learn": "16 h"
   },
   {
-    "id": "proficiency_platform_fn57_master",
+    "id": "proficiency_fn57_master",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -37,7 +37,7 @@
     "description": "In your hands, this futuristic pistol is extremely dangerous.",
 
     "can_learn": true,
-    "required_proficiencies": ["proficiency_platform_fn57_expert"],
+    "required_proficiencies": ["proficiency_fn57_expert"],
 
     "default_time_multiplier": 1.5,
     "default_skill_penalty": 0.2,

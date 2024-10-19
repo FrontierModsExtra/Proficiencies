@@ -1,6 +1,6 @@
 [
   {
-    "id": "proficiency_platform_ak_novice",
+    "id": "proficiency_ak_novice",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -14,7 +14,7 @@
     "time_to_learn": "8 h"
   },
   {
-    "id": "proficiency_platform_ak_expert",
+    "id": "proficiency_ak_expert",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -22,14 +22,14 @@
     "description": "You've gotten pretty handy with the AK family of rifles, understanding their operation intimately.",
 
     "can_learn": true,
-    "required_proficiencies": ["proficiency_platform_ak_novice"],
+    "required_proficiencies": ["proficiency_ak_novice"],
 
     "default_time_multiplier": 1.5,
     "default_skill_penalty": 0.2,
     "time_to_learn": "16 h"
   },
   {
-    "id": "proficiency_platform_ak_master",
+    "id": "proficiency_ak_master",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -37,7 +37,7 @@
     "description": "You know how to make AK rifles sing in your hands.",
 
     "can_learn": true,
-    "required_proficiencies": ["proficiency_platform_ak_expert"],
+    "required_proficiencies": ["proficiency_ak_expert"],
 
     "default_time_multiplier": 1.5,
     "default_skill_penalty": 0.2,

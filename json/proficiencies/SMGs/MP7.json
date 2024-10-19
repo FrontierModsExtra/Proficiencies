@@ -1,6 +1,6 @@
 [
   {
-    "id": "proficiency_platform_mp7_novice",
+    "id": "proficiency_mp7_novice",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -14,7 +14,7 @@
     "time_to_learn": "8 h"
   },
   {
-    "id": "proficiency_platform_mp7_expert",
+    "id": "proficiency_mp7_expert",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -22,14 +22,14 @@
     "description": "Your grip on the MP7 is solid, and your aim with it is true.",
 
     "can_learn": true,
-    "required_proficiencies": ["proficiency_platform_mp7_novice"],
+    "required_proficiencies": ["proficiency_mp7_novice"],
 
     "default_time_multiplier": 1.5,
     "default_skill_penalty": 0.2,
     "time_to_learn": "16 h"
   },
   {
-    "id": "proficiency_platform_mp7_master",
+    "id": "proficiency_mp7_master",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -37,7 +37,7 @@
     "description": "The MP7 is like an extension of your profile.",
 
     "can_learn": true,
-    "required_proficiencies": ["proficiency_platform_mp7_expert"],
+    "required_proficiencies": ["proficiency_mp7_expert"],
 
     "default_time_multiplier": 1.5,
     "default_skill_penalty": 0.2,

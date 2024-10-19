@@ -1,6 +1,6 @@
 [
   {
-    "id": "proficiency_platform_m1911_novice",
+    "id": "proficiency_m1911_novice",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -14,7 +14,7 @@
     "time_to_learn": "8 h"
   },
   {
-    "id": "proficiency_platform_m1911_expert",
+    "id": "proficiency_m1911_expert",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -22,14 +22,14 @@
     "description": "You've managed to gather a significant skill with M1911 and similar pistols.",
 
     "can_learn": true,
-    "required_proficiencies": ["proficiency_platform_m1911_novice"],
+    "required_proficiencies": ["proficiency_m1911_novice"],
 
     "default_time_multiplier": 1.5,
     "default_skill_penalty": 0.2,
     "time_to_learn": "16 h"
   },
   {
-    "id": "proficiency_platform_m1911_master",
+    "id": "proficiency_m1911_master",
     "type": "proficiency",
     "category": "prof_combat",
 
@@ -37,7 +37,7 @@
     "description": "M1911 makes you feel like a warrior.",
 
     "can_learn": true,
-    "required_proficiencies": ["proficiency_platform_m1911_expert"],
+    "required_proficiencies": ["proficiency_m1911_expert"],
 
     "default_time_multiplier": 1.5,
     "default_skill_penalty": 0.2,

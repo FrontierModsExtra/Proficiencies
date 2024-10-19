@@ -9,7 +9,7 @@
 
     "effect": [
       {
-        "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_<u_val:proficiency_target_type>",
+        "set_string_var": "proficiency_<u_val:proficiency_current_platform>_<u_val:proficiency_target_grade>",
         "target_var": { "context_val": "proficiency" },
         "parse_tags": true
       },
@@ -87,7 +87,7 @@
             ]
           },
           {
-            "set_string_var": "proficiency_platform_<u_val:proficiency_current_platform>_<u_val:proficiency_target_type>",
+            "set_string_var": "proficiency_<u_val:proficiency_current_platform>_<u_val:proficiency_target_grade>",
             "target_var": { "context_val": "proficiency" },
             "parse_tags": true
           },
