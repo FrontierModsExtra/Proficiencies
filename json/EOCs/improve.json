@@ -31,6 +31,7 @@
           "_total_progress"
         ]
       },
+
       {
         "//run_eocs": "run target/current type check again to see if, with the update to the proficiency progress, we now need to target a different type",
         "run_eocs": "Proficiencies_EOC_GET_PROFICIENCY_GRADE"
