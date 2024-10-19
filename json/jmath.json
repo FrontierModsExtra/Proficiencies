@@ -1,0 +1,37 @@
+[
+  {
+    "id": "get_new_progress",
+    "type": "jmath_function",
+    "num_args": 0,
+
+    "return": "max( 1, rng( 1, 4 ) * get_skill_modifier() * get_int_modifier() )"
+  },
+  {
+    "id": "get_skill_modifier",
+    "type": "jmath_function",
+    "num_args": 0,
+
+    "return": "max( 1, ( u_skill( 'gun' ) - 3 ) / 3 )"
+  },
+  {
+    "id": "get_int_modifier",
+    "type": "jmath_function",
+    "num_args": 0,
+
+    "return": "get_base_int_modifier() * get_learning_modifier()"
+  },
+  {
+    "id": "get_base_int_modifier",
+    "type": "jmath_function",
+    "num_args": 0,
+
+    "return": "1 + ( ( u_val( 'intelligence' ) - 8 ) / 12 )"
+  },
+  {
+    "id": "get_learning_modifier",
+    "type": "jmath_function",
+    "num_args": 0,
+
+    "return": "1 + ( u_has_trait('SLOWLEARNER') * -0.15 ) + ( u_has_trait('FASTLEARNER') * 0.15 )"
+  }
+]
