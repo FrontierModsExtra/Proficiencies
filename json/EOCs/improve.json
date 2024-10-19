@@ -14,44 +14,9 @@
         "parse_tags": true
       },
       {
-        "math": [
-          "_int_modifier",
-          "=",
-          "1 + ( ( u_val( 'intelligence' ) - 8 ) / 12 )"
-        ]
       },
-      {
-        "//": "amplifies intelligence malus if the modifier is below 0",
-        "if": { "u_has_trait": "SLOWLEARNER" },
-        "then": {
-          "if": { "math": ["_int_modifier", "<", "0"] },
-          "then": { "math": ["_int_modifier", "*=", "1.15"] },
-          "else": { "math": ["_int_modifier", "*=", "0.85"] }
-        }
-      },
-      {
-        "//": "reduces intelligence malus if the modifier is below 0",
-        "if": { "u_has_trait": "FASTLEARNER" },
-        "then": {
-          "if": { "math": ["_int_modifier", ">", "0"] },
-          "then": { "math": ["_int_modifier", "*=", "1.15"] },
-          "else": { "math": ["_int_modifier", "*=", "0.85"] }
-        }
-      },
-      {
-        "math": [
-          "_skill_modifier",
-          "=",
-          "max( 1, ( u_skill( 'gun' ) - 3 ) / 3 )"
-        ]
-      },
-      {
-        "math": [
-          "_new_progress",
-          "=",
-          "max( 1, rng( 4, 64 ) * _skill_modifier * _int_modifier )"
-        ]
-      },
+
+      { "math": ["_new_progress", "=", "get_new_progress()"] },
       {
         "math": [
           "_total_progress",
