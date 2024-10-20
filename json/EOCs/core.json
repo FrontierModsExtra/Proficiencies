@@ -72,6 +72,7 @@
     "eoc_type": "EVENT",
     "required_event": "character_ranged_attacks_character",
 
+    "condition": "u_is_character",
     "effect": [{ "run_eocs": "Proficiencies_EOC_IMPROVE" }]
   }
 ]
