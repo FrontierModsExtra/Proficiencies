@@ -38,7 +38,7 @@
   },
 
   {
-    "id": "EOC_PROFICIENCY_ON_GAME_START",
+    "id": "Proficiencies_EOC_ON_GAME_BEGIN",
     "type": "effect_on_condition",
     "eoc_type": "EVENT",
     "required_event": "game_begin",
